@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/siddharth018/Laravel-8-REST-API-with-Passport-Authentication/master/screenshot/laravelapi.gif">
+<img src="https://raw.githubusercontent.com/siddharth018/Laravel-8-REST-API-with-Passport-Authentication/master/screenshot/laravelapi.gif"     width: 100%;>
 
 <img src="https://raw.githubusercontent.com/siddharth018/Laravel-8-REST-API-with-Passport-Authentication/master/screenshot/all%20blogs.png">
 
