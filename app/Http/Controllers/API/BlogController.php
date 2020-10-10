@@ -72,26 +72,25 @@ class BlogController extends BaseController
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Blog $Blog)
-    {
-        
-
+     public function update(Request $request, Blog $blog)
+     {
+         
         $input = $request->all();
-   
+        
         $validator = Validator::make($input, [
             'title' => 'required',
             'description' => 'required'
         ]);
-   
+            
         if($validator->fails()){
             return $this->sendError('Validation Error.', $validator->errors());       
         }
+        
+        $blog->title = $input['title'];
+        $blog->description = $input['description'];
+        $blog->save();
    
-        $Blog->title = $input['title'];
-        $Blog->description = $input['description'];
-        $Blog->save();
-   
-        return $this->sendResponse(new BlogResource($Blog), 'Blog updated successfully.');
+        return $this->sendResponse(new BlogResource($blog), 'Blog updated successfully.');
     }
    
     /**
@@ -100,10 +99,9 @@ class BlogController extends BaseController
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Blog $Blog)
+    public function destroy(Blog $blog)
     {
-        $Blog->delete();
-   
+        $blog->delete();
         return $this->sendResponse([], 'Blog deleted successfully.');
     }
 }
