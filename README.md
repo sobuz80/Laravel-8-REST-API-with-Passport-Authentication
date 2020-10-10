@@ -1,5 +1,14 @@
 
-<img src="https://raw.githubusercontent.com/siddharth018/laravel7productFilter/master/screenshot/product.gif">
+<img src="https://raw.githubusercontent.com/siddharth018/Laravel-8-REST-API-with-Passport-Authentication/master/screenshot/all%20blogs.png">
+
+
+<img src="https://raw.githubusercontent.com/siddharth018/Laravel-8-REST-API-with-Passport-Authentication/master/screenshot/create%20blog.png">
+
+<img src="https://raw.githubusercontent.com/siddharth018/Laravel-8-REST-API-with-Passport-Authentication/master/screenshot/laravelapi.gif">
+
+<img src="https://raw.githubusercontent.com/siddharth018/Laravel-8-REST-API-with-Passport-Authentication/master/screenshot/login.png">
+
+<img src="https://raw.githubusercontent.com/siddharth018/Laravel-8-REST-API-with-Passport-Authentication/master/screenshot/single%20blog%20get.png">
 
 
 
@@ -33,6 +42,17 @@ git clone https://github.com/siddharth018/Laravel-8-REST-API-with-Passport-Authe
 <h2>Step 5: Run server</h2>  
 
     php artisan serve
+
+post: http://127.0.0.1:8000/api/register
+post: http://127.0.0.1:8000/api/login
+get: http://127.0.0.1:8000/api/blogs
+post: http://127.0.0.1:8000/api/blogs
+put: http://127.0.0.1:8000/api/blogs/1
+delete: http://127.0.0.1:8000/api/blogs/1
+
+## Put data need to pass x www form urlencoded inside of body
+
+<img src="https://raw.githubusercontent.com/siddharth018/Laravel-8-REST-API-with-Passport-Authentication/master/screenshot/update%20blog.png">
 
 
 ## Youtube
