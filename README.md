@@ -33,7 +33,7 @@ git clone https://github.com/siddharth018/Laravel-8-REST-API-with-Passport-Authe
 
 <h2>Step 3: composer install</h2> 
     
-    composer install
+    composer install 
 
 <h2>Step 4: Migrate</h2> 
     
